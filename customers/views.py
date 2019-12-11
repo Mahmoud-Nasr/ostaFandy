@@ -44,13 +44,15 @@ def signup_ostafandy(request):
         return JsonResponse(False, safe=False)
 
 
-def login(username, password):
+def login(request, username, password):
     try:
         customer = User.objects.get(username=username, password=password)
-        user_serializer = UserSerializer(customer)
-        return JsonResponse(user_serializer.data)
+        if customer is None:
+            return JsonResponse(False, safe=False)
+        else:
+            return JsonResponse(True, safe=False)
     except User.DoesNotExist:
-        return JsonResponse(False)
+        return JsonResponse(False,safe=False)
 
 
 def list_osta(request, cid=1):
