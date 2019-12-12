@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 import pdb
 from .Serializer import UserSerializer
+from .Serializer import LoginSerializer
 
 import logging
 # Create your views here.
@@ -44,9 +45,12 @@ def signup_ostafandy(request):
         return JsonResponse(False, safe=False)
 
 
-def login(request, username, password):
+@csrf_exempt
+def login(request):
     try:
-        customer = User.objects.get(username=username, password=password)
+        login_request = JSONParser().parse(request)
+        print(login_request)
+        customer = User.objects.get(username=login_request['username'], password=login_request['password'])
         if customer is None:
             return JsonResponse(False, safe=False)
         else:
