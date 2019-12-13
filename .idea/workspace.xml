@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="49e344ce-7453-4dc0-b527-80313382d30f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osta/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/osta/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +97,8 @@
       <workItem from="1576086738944" duration="1024000" />
       <workItem from="1576109018201" duration="372000" />
       <workItem from="1576190946434" duration="2792000" />
+      <workItem from="1576240827174" duration="7875000" />
+      <workItem from="1576250111261" duration="1943000" />
     </task>
     <servers />
   </component>
@@ -108,22 +110,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576016856160" />
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1576193875995">
+    <state width="1853" height="285" key="GridCell.Tab.0.bottom" timestamp="1576249998628">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576193875995" />
-    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1576193875994">
+    <state width="1853" height="285" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576249998628" />
+    <state width="1853" height="285" key="GridCell.Tab.0.center" timestamp="1576249998627">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576193875994" />
-    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1576193875993">
+    <state width="1853" height="285" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576249998627" />
+    <state width="1853" height="285" key="GridCell.Tab.0.left" timestamp="1576249998626">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576193875993" />
-    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1576193875994">
+    <state width="1853" height="285" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576249998626" />
+    <state width="1853" height="285" key="GridCell.Tab.0.right" timestamp="1576249998627">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576193875994" />
+    <state width="1853" height="285" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576249998627" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1576193875961">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -140,14 +142,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576193875958" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576190968476">
+    <state x="852" y="277" width="272" height="550" key="RollbackChangesDialog" timestamp="1576248984384">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576190968476" />
+    <state x="852" y="277" width="272" height="550" key="RollbackChangesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576248984384" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576250146774">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576250146774" />
     <state x="112" y="219" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1576086740276" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576011675135">
+    <state x="657" y="235" width="662" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576241465678">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1576011675135" />
+    <state x="657" y="235" width="662" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576241465678" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576241342531">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1576241342531" />
   </component>
 </project>

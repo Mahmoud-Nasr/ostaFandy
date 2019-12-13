@@ -1,4 +1,3 @@
-from asyncio.log import logger
 
 from .models import User
 from django.http.response import JsonResponse
@@ -6,7 +5,6 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 import pdb
 from .Serializer import UserSerializer
-from .Serializer import LoginSerializer
 
 import logging
 # Create your views here.
@@ -21,9 +19,13 @@ def signup(request):
         # user_serializer.user_type = True
         # user_serializer.available_now = False
         # user_serializer.available_today = False
+        print(user_serializer.is_valid())
+        print(user_serializer.errors)
         if user_serializer.is_valid():
             user_serializer.save()
-        return JsonResponse(True, safe=False)
+            return JsonResponse(True, safe=False)
+        else:
+            return JsonResponse(False, safe=False)
     except:
         logging.exception("message")
         return JsonResponse(False, safe=False)
