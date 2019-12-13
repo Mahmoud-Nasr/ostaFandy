@@ -41,7 +41,9 @@ def signup_ostafandy(request):
         user_serializer = UserSerializer(data=customer_data)
         if user_serializer.is_valid():
             user_serializer.save()
-        return JsonResponse(True, safe=False)
+            return JsonResponse(True, safe=False)
+        else:
+            return JsonResponse(False, safe=False)
     except:
         logging.exception("message")
         return JsonResponse(False, safe=False)
@@ -51,7 +53,6 @@ def signup_ostafandy(request):
 def login(request):
     try:
         login_request = JSONParser().parse(request)
-        print(login_request)
         customer = User.objects.get(username=login_request['username'], password=login_request['password'])
         if customer is None:
             return JsonResponse(False, safe=False)

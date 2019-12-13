@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49e344ce-7453-4dc0-b527-80313382d30f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osta/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/osta/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <workItem from="1576109018201" duration="372000" />
       <workItem from="1576190946434" duration="2792000" />
       <workItem from="1576240827174" duration="7875000" />
-      <workItem from="1576250111261" duration="1943000" />
+      <workItem from="1576250111261" duration="2309000" />
     </task>
     <servers />
   </component>
