@@ -53,13 +53,15 @@ def signup_ostafandy(request):
 def login(request):
     try:
         login_request = JSONParser().parse(request)
+        print(login_request)
         customer = User.objects.get(username=login_request['username'], password=login_request['password'])
+        user_serializer = UserSerializer(data=customer)
         if customer is None:
             return JsonResponse(False, safe=False)
         else:
-            return JsonResponse(True, safe=False)
+            return JsonResponse(user_serializer, safe=False)
     except User.DoesNotExist:
-        return JsonResponse(False,safe=False)
+        return JsonResponse(False, safe=False)
 
 
 def list_osta(request, cid=1):
@@ -94,13 +96,20 @@ def list_all(request):
     except:
         return JsonResponse([], safe=False)
 
-def change_availability(ostaid):
+
+@csrf_exempt
+def change_availability(request):
     try:
-        user = User.objects.get(id=ostaid)
-        user.available_now = False
-        user.save()
-        return JsonResponse(True)
+        login_request = JSONParser().parse(request)
+        print(login_request)
+        customer = User.objects.get(username=login_request['username'], user_type=False)
+        if customer.available_now:
+            customer.available_now = False
+        else:
+            customer.available_now = True
+        customer.save()
+        return JsonResponse(True, safe=False)
     except:
-        return JsonResponse(False)
+        return JsonResponse(False, safe=False)
 
 
