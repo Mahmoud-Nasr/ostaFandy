@@ -15,10 +15,10 @@ def signup(request):
     # print("*****client")
     try:
         customer_data = JSONParser().parse(request)
+        customer_data['user_type'] = True
+        customer_data['available_now'] = False
+        customer_data['available_today'] = False
         user_serializer = UserSerializer(data=customer_data)
-        # user_serializer.user_type = True
-        # user_serializer.available_now = False
-        # user_serializer.available_today = False
         print(user_serializer.is_valid())
         print(user_serializer.errors)
         if user_serializer.is_valid():
@@ -37,7 +37,9 @@ def signup_ostafandy(request):
     try:
         #pdb.set_trace()
         customer_data = JSONParser().parse(request)
-        #customer_data.user_type = False
+        customer_data['user_type'] = False
+        customer_data['available_now'] = True
+        customer_data['available_today'] = True
         user_serializer = UserSerializer(data=customer_data)
         if user_serializer.is_valid():
             user_serializer.save()
@@ -55,11 +57,12 @@ def login(request):
         login_request = JSONParser().parse(request)
         print(login_request)
         customer = User.objects.get(username=login_request['username'], password=login_request['password'])
-        user_serializer = UserSerializer(data=customer)
+        user_serializer = UserSerializer(data=[customer], many=True)
         if customer is None:
             return JsonResponse(False, safe=False)
         else:
-            return JsonResponse(user_serializer, safe=False)
+            print(user_serializer.is_valid())
+            return JsonResponse(user_serializer.data, safe=False)
     except User.DoesNotExist:
         return JsonResponse(False, safe=False)
 

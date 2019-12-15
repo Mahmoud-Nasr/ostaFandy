@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="49e344ce-7453-4dc0-b527-80313382d30f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/customers/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,8 @@
       <workItem from="1576276014706" duration="773000" />
       <workItem from="1576278274151" duration="1446000" />
       <workItem from="1576354983777" duration="1303000" />
-      <workItem from="1576439649870" duration="2084000" />
+      <workItem from="1576439649870" duration="3531000" />
+      <workItem from="1576445270584" duration="1304000" />
     </task>
     <servers />
   </component>
@@ -150,10 +150,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="852" y="277" width="272" height="550" key="RollbackChangesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576248984384" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576439721517">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576445281130">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576439721517" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576445281130" />
     <state x="112" y="219" key="com.intellij.ide.util.TipDialog/67.27.733.573@67.27.733.573" timestamp="1576086740276" />
     <state x="657" y="235" width="662" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576241465678">
       <screen x="67" y="27" width="1853" height="1053" />
